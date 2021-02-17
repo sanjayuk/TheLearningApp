@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubjectDetailsActivity">
+
+    <ImageView
+        android:id="@+id/subject_image"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/t2"
+        android:transitionName="subjectImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/subject_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subject_image">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card_color">
+
+            <TextView
+                android:id="@+id/subject_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Physics"
+                android:textColor="@color/extra_black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:transitionName="subjectTitle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/subject_lesson_test_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="test"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/subject_practice_test_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="practice"
+                app:layout_constraintBottom_toBottomOf="@+id/subject_lesson_test_btn"
+                app:layout_constraintEnd_toStartOf="@+id/subject_lesson_test_btn"
+                app:layout_constraintTop_toTopOf="@+id/subject_lesson_test_btn" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/lesson_video_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="125dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/vi1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:autoSizeMaxTextSize="15sp"
+                                android:autoSizeMinTextSize="12sp"
+                                android:autoSizeTextType="uniform"
+                                android:padding="5dp"
+                                android:text="Math-Linear programming and Data Diffrenetiation"
+                                android:textColor="#2d2d2d"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="125dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/vi2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:autoSizeMaxTextSize="15sp"
+                                android:autoSizeMinTextSize="12sp"
+                                android:autoSizeTextType="uniform"
+                                android:padding="5dp"
+                                android:text="Math-Linear programming and Data Diffrenetiation"
+                                android:textColor="#2d2d2d"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="125dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/vi3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:autoSizeMaxTextSize="15sp"
+                                android:autoSizeMinTextSize="12sp"
+                                android:autoSizeTextType="uniform"
+                                android:padding="5dp"
+                                android:text="Math-Linear programming and Data Diffrenetiation"
+                                android:textColor="#2d2d2d"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="125dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/vi4" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:autoSizeMaxTextSize="15sp"
+                                android:autoSizeMinTextSize="12sp"
+                                android:autoSizeTextType="uniform"
+                                android:padding="5dp"
+                                android:text="Math-Linear programming and Data Diffrenetiation"
+                                android:textColor="#2d2d2d"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="125dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/vi5" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:autoSizeMaxTextSize="15sp"
+                                android:autoSizeMinTextSize="12sp"
+                                android:autoSizeTextType="uniform"
+                                android:padding="5dp"
+                                android:text="Math-Linear programming and Data Diffrenetiation"
+                                android:textColor="#2d2d2d"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="125dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/vi3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:autoSizeMaxTextSize="15sp"
+                                android:autoSizeMinTextSize="12sp"
+                                android:autoSizeTextType="uniform"
+                                android:padding="5dp"
+                                android:text="Math-Linear programming and Data Diffrenetiation"
+                                android:textColor="#2d2d2d"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="125dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/vi1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:autoSizeMaxTextSize="15sp"
+                                android:autoSizeMinTextSize="12sp"
+                                android:autoSizeTextType="uniform"
+                                android:padding="5dp"
+                                android:text="Math-Linear programming and Data Diffrenetiation"
+                                android:textColor="#2d2d2d"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="125dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/vi2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:autoSizeMaxTextSize="15sp"
+                                android:autoSizeMinTextSize="12sp"
+                                android:autoSizeTextType="uniform"
+                                android:padding="5dp"
+                                android:text="Math-Linear programming and Data Diffrenetiation"
+                                android:textColor="#2d2d2d"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

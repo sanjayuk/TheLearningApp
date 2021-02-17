@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">THE LEARNING APP</string>
+
+    <string name="user_name">Hello, Anis</string>
+    <string name="class_name">CBSE-KG</string>
+
+    <string name="physics_desc">Physics is the basic physical science. Until rather recent times physics and natural philosophy were used interchangeably for the science whose aim is the discovery and formulation of the fundamental laws of nature. As the modern sciences developed and became increasingly specialized, physics came to denote that part of physical science not included in astronomy, chemistry, geology, and engineering. Both experiment, the observation of phenomena under conditions that are controlled as precisely as possible, and theory, the formulation of a unified conceptual framework, play essential and complementary roles in the advancement of physics. Physical experiments result in measurements, which are compared with the outcome predicted by theory. A theory that reliably predicts the results of experiments to which it is applicable is said to embody a law of physics. </string>
+</resources>
