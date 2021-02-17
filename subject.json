@@ -1,8 +1,9 @@
 {
   "subject": [
     {
-      "subjectIMG":"https://img.collegedekhocdn.com/media/img/news/B.Sc_Physics_scope.png?tr=h-310,w-615",
-      "physics": [
+      "subjectName":"Physics",
+      "subjectIMG": "https://img.collegedekhocdn.com/media/img/news/B.Sc_Physics_scope.png?tr=h-310,w-615",
+      "content": [
         {
           "lesson_name": "lesson 1",
           "videos": [
@@ -145,8 +146,9 @@
       ]
     },
     {
-      "subjectIMG":"https://inteng-storage.s3.amazonaws.com/img/iea/3oOp0zdaOW/sizes/chemistry-games-fun_resize_md.jpg",
-      "chemistry": [
+      "subjectName":"Chemistry",
+      "subjectIMG": "https://inteng-storage.s3.amazonaws.com/img/iea/3oOp0zdaOW/sizes/chemistry-games-fun_resize_md.jpg",
+      "content": [
         {
           "lesson_name": "lesson 1",
           "videos": [
@@ -329,8 +331,9 @@
       ]
     },
     {
-      "subjectIMG":"https://news.virginia.edu/sites/default/files/article_image/synthetic_biology_header_3-2.jpg",
-      "biology": [
+      "subjectName":"Biology",
+      "subjectIMG": "https://news.virginia.edu/sites/default/files/article_image/synthetic_biology_header_3-2.jpg",
+      "content": [
         {
           "lesson_name": "lesson 1",
           "videos": [
@@ -473,8 +476,9 @@
       ]
     },
     {
-      "subjectIMG":"https://platofootnote.files.wordpress.com/2016/05/mathematics.jpg",
-      "mathematics": [
+      "subjectName":"Maths",
+      "subjectIMG": "https://platofootnote.files.wordpress.com/2016/05/mathematics.jpg",
+      "content": [
         {
           "lesson_name": "lesson 1",
           "videos": [
@@ -577,8 +581,9 @@
       ]
     },
     {
-      "subjectIMG":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSheiearTrHxJDUwxjw5F-GcDE1qsPmp0yAw&usqp=CAU",
-      "science": [
+      "subjectName":"Science",
+      "subjectIMG": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSheiearTrHxJDUwxjw5F-GcDE1qsPmp0yAw&usqp=CAU",
+      "content": [
         {
           "lesson_name": "lesson 1",
           "videos": [
@@ -721,8 +726,9 @@
       ]
     },
     {
-      "subjectIMG":"https://www.elmhurst.edu/wp-content/uploads/2019/03/5-tips-for-teaching-ap-human-geography-illustration.jpg",
-      "geography": [
+      "subjectName":"Geography",
+      "subjectIMG": "https://www.elmhurst.edu/wp-content/uploads/2019/03/5-tips-for-teaching-ap-human-geography-illustration.jpg",
+      "content": [
         {
           "lesson_name": "lesson 1",
           "videos": [
